@@ -33,6 +33,7 @@ from pyrogram.types import Message
 from pyromod import listen
 from Python_ARQ import ARQ
 from telegraph import Telegraph
+from pytgcalls import PyTgCalls
 
 is_config = path.exists("config.py")
 
@@ -110,6 +111,12 @@ if not HEROKU:
     )
 else:
     app2 = Client(SESSION_STRING, api_id=API_ID, api_hash=API_HASH)
+
+call_py = PyTgCalls(
+    app2,
+    cache_duration=100,
+    overload_quiet_mode=True,
+)
 
 aiohttpsession = ClientSession()
 
