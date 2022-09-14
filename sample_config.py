@@ -29,7 +29,7 @@ if HEROKU:
     RSS_DELAY = int(environ.get("RSS_DELAY", None))
     PM_PERMIT = bool(int(environ.get("PM_PERMIT", None)))
     ASSISTANT_NAME = environ.get("ASSISTANT_NAME", ᴜʟᴛʀᴏɴ)
-    BOT_USERNAME = environ.get("BOT_USERNAME", @ULTRON_X_ROBOT)
+    BOT_USERNAME = environ.get("BOT_USERNAME", ULTRON_X_ROBOT)
     IMG_1 = environ.get("IMG_1", "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
     IMG_2 = environ.get("IMG_2", "https://telegra.ph/file/6213d2673486beca02967.png")
     IMG_3 = environ.get("IMG_3", "https://telegra.ph/file/f02efde766160d3ff52d6.png")
