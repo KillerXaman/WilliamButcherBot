@@ -1,6 +1,6 @@
 from pyrogram import filters
 from typing import List, Union
-from config import USERBOT_PREFIXES
+from sample_config import USERBOT_PREFIXES
 
 
 other_filters = filters.group & ~filters.edited & ~filters.via_bot & ~filters.forwarded
