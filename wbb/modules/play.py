@@ -13,7 +13,6 @@ import ffmpeg
 import requests
 from wbb.fonts import CHAT_TITLE
 from PIL import Image, ImageDraw, ImageFont
-from sample_config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, IMG_5, UPDATES_CHANNEL, GROUP_SUPPORT
 from wbb.filters import command, other_filters
 from wbb.queues import QUEUE, add_to_queue
 from wbb import call_py, app2 as user
@@ -26,6 +25,10 @@ from pytgcalls.types.input_stream import AudioPiped
 from youtubesearchpython import VideosSearch
 import yt_dlp
 import yt_dlp
+
+IMG_1 = "https://te.legra.ph/file/beecb3fd9e42d34f511ba.jpg"
+IMG_2 "https://te.legra.ph/file/beecb3fd9e42d34f511ba.jpg"
+IMG_5 "https://te.legra.ph/file/beecb3fd9e42d34f511ba.jpg"
 
 KILLER_IMGS = [
     "process/LightGreen.png",
@@ -142,8 +145,8 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton("⏭️", "skip"),
                       InlineKeyboardButton("▶️", callback_data="cbresume"),
                   ],[
-                      InlineKeyboardButton(text="✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                      InlineKeyboardButton(text="📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                      InlineKeyboardButton(text="✨ ɢʀᴏᴜᴘ", url=f"https://t.me/ULTRON_X_SUPPORT"),
+                      InlineKeyboardButton(text="📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/ULTRON_X_UPDATES"),
                   ],[
                       InlineKeyboardButton("🗑", callback_data="cls")],
                   ]
@@ -178,7 +181,7 @@ async def play(c: Client, m: Message):
         b = await c.get_chat_member(chat_id, ubot)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **is banned in group** {m.chat.title}\n\n» **unban the userbot first if you want to use this bot.**"
+                f"music bot is banned in group** {m.chat.title}\n\n» **unban the userbot first if you want to use this bot.**"
             )
             return
     except UserNotParticipant:
