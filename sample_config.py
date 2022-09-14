@@ -30,6 +30,11 @@ if HEROKU:
     PM_PERMIT = bool(int(environ.get("PM_PERMIT", None)))
     ASSISTANT_NAME = environ.get("ASSISTANT_NAME", 𒌋这 ᴜʟᴛʀᴏɴ [🇮🇳])
     BOT_USERNAME = environ.get("BOT_USERNAME", @ULTRON_X_ROBOT)
+    IMG_1 = environ.get("IMG_1", "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
+    IMG_2 = environ.get("IMG_2", "https://telegra.ph/file/6213d2673486beca02967.png")
+    IMG_3 = environ.get("IMG_3", "https://telegra.ph/file/f02efde766160d3ff52d6.png")
+    IMG_4 = environ.get("IMG_4", "https://telegra.ph/file/be5f551acb116292d15ec.png")
+    IMG_5 = environ.get("IMG_5", "https://telegra.ph/file/d08d6474628be7571f013.png")
 else:
     BOT_TOKEN = "467677575:YZfaakjwd545dfg-N6JStihhuw5gQeZHntc"
     API_ID = 123456
