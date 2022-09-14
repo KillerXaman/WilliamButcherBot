@@ -36,6 +36,7 @@ if HEROKU:
     IMG_4 = environ.get("IMG_4", "https://telegra.ph/file/be5f551acb116292d15ec.png")
     IMG_5 = environ.get("IMG_5", "https://telegra.ph/file/d08d6474628be7571f013.png")
     DURATION_LIMIT= int(environ.get("DURATION_LIMIT", "60"))
+    COMMAND_PREFIXES = bool(int(environ.get("COMMAND_PREFIXES", "/ ! .").split())
 else:
     BOT_TOKEN = "467677575:YZfaakjwd545dfg-N6JStihhuw5gQeZHntc"
     API_ID = 123456
