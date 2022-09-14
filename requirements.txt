@@ -16,7 +16,6 @@ search-engine-parser
 speedtest-cli
 TgCrypto
 uvloop
-youtube_dl
 bs4
 python-dotenv
 feedparser
@@ -26,3 +25,15 @@ img2pdf
 telegraph
 pytube
 py-tgcalls
+yt-dlp
+asyncio
+youtube-search-python
+youtube-search
+gitpython
+asgiref
+wget
+pyyaml
+telethon
+speedtest-cli
+deezer-python
+spotipy
