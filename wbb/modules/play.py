@@ -28,16 +28,16 @@ import yt_dlp
 import yt_dlp
 
 KILLER_IMGS = [
-    "Process/ImageFont/LightGreen.png",
-    "Process/ImageFont/Red.png",
-    "Process/ImageFont/Black.png",
-    "Process/ImageFont/Blue.png",
-    "Process/ImageFont/Grey.png",
-    "Process/ImageFont/Green.png",
-    "Process/ImageFont/Lightblue.png",
-    "Process/ImageFont/Lightred.png",
-    "Process/ImageFont/Purple.png",
-    "Process/ImageFont/foreground.png",
+    "process/LightGreen.png",
+    "process/Red.png",
+    "process/Black.png",
+    "process/Blue.png",
+    "process/Grey.png",
+    "process/Green.png",
+    "process/Lightblue.png",
+    "process/Lightred.png",
+    "process/Purple.png",
+    "process/foreground.png",
 ]
 
 def ytsearch(query: str):
@@ -108,7 +108,7 @@ async def generate_cover(thumbnail, title, userid, ctitle):
                 await f.write(await resp.read())
                 await f.close()
     image1 = Image.open(f"thumb{userid}.png")
-    images = choice(ZAID_IMGS)
+    images = choice(KILLER_IMGS)
     image2 = Image.open(images)
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
