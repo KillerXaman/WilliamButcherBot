@@ -3,7 +3,7 @@ import aiohttp
 from wbb.converter import convert
 import ffmpeg
 import requests
-from Process.fonts import CHAT_TITLE
+from process.fonts import CHAT_TITLE
 from PIL import Image, ImageDraw, ImageFont
 
 aiohttpsession = aiohttp.ClientSession()
