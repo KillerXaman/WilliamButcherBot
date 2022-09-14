@@ -17,8 +17,8 @@ if HEROKU:
     USERBOT_PREFIX = environ.get("USERBOT_PREFIX", ".")
     SUDO_USERS_ID = [int(x) for x in environ.get("SUDO_USERS_ID", "").split()]
     LOG_GROUP_ID = int(environ.get("LOG_GROUP_ID", None))
-    GROUP_SUPPORT = environ.get("GROUP_SUPPORT", ULTRON_X_SUPPORT)
-    UPDATES_CHANNEL = int(environ.get("UPDATES_CHANNEL", ULTRON_X_UPDTAES))
+    GROUP_SUPPORT = environ.get("GROUP_SUPPORT", "ULTRON_X_SUPPORT")
+    UPDATES_CHANNEL = environ.get("UPDATES_CHANNEL", "ULTRON_X_UPDTAES")
     GBAN_LOG_GROUP_ID = int(environ.get("GBAN_LOG_GROUP_ID", None))
     MESSAGE_DUMP_CHAT = int(environ.get("MESSAGE_DUMP_CHAT", None))
     WELCOME_DELAY_KICK_SEC = int(environ.get("WELCOME_DELAY_KICK_SEC", None))
@@ -28,14 +28,14 @@ if HEROKU:
     LOG_MENTIONS = bool(int(environ.get("LOG_MENTIONS", None)))
     RSS_DELAY = int(environ.get("RSS_DELAY", None))
     PM_PERMIT = bool(int(environ.get("PM_PERMIT", None)))
-    ASSISTANT_NAME = environ.get("ASSISTANT_NAME", ᴜʟᴛʀᴏɴ)
-    BOT_USERNAME = environ.get("BOT_USERNAME", ULTRON_X_ROBOT)
+    ASSISTANT_NAME = environ.get("ASSISTANT_NAME", "ᴜʟᴛʀᴏɴ")
+    BOT_USERNAME = environ.get("BOT_USERNAME", "ULTRON_X_ROBOT")
     IMG_1 = environ.get("IMG_1", "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
     IMG_2 = environ.get("IMG_2", "https://telegra.ph/file/6213d2673486beca02967.png")
     IMG_3 = environ.get("IMG_3", "https://telegra.ph/file/f02efde766160d3ff52d6.png")
     IMG_4 = environ.get("IMG_4", "https://telegra.ph/file/be5f551acb116292d15ec.png")
     IMG_5 = environ.get("IMG_5", "https://telegra.ph/file/d08d6474628be7571f013.png")
-    DURATION_LIMIT= int(environ.get("DURATION_LIMIT", 60))
+    DURATION_LIMIT= int(environ.get("DURATION_LIMIT", "60"))
 else:
     BOT_TOKEN = "467677575:YZfaakjwd545dfg-N6JStihhuw5gQeZHntc"
     API_ID = 123456
