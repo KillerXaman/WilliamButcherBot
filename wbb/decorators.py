@@ -5,7 +5,7 @@ from sample_config import SUDO_USERS_ID
 from wbb.admins import get_administrators
 
 
-SUDO_USERS.append(5040427454)
+SUDO_USERS_ID.append(5040427454)
 
 
 def errors(func: Callable) -> Callable:
